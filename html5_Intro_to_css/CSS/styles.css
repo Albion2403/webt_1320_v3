@@ -1,3 +1,67 @@
 html {
     background-color: khaki;
 }
+
+body {
+    background-color: beige;
+    width: 960px;
+    margin: 20px auto;
+    border-radius: 20px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+header img {
+    display: block;
+    margin: 20px auto;
+    width: 30%;
+}
+
+nav {
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+nav a {
+    color:darkred;
+    font-size: 28px;
+    margin 0 20px;
+}
+
+nav a:hover {
+    color:white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+main img {
+    display: block;
+    margin: 20px auto;
+    width: 35%;
+}
+
+footer {
+    background-color: lightcoral;
+    text-align: center;
+    padding: 40px;
+    border-radius: 0 0 20px 20px;
+}
+
+a{
+    color: darkred;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    color: orangered;
+}
