@@ -1,5 +1,5 @@
 body {
-    background-color: dimgray;
+    background-color: white;
 }
 
 img {
@@ -13,96 +13,58 @@ h1, h2, h3 {
     text-align: center;
 }
 
-#container {
+#container { 
     background-color: mistyrose;
-    width: 75%;
-    margin: 20px auto;
 }
 
- nav {
-    background-color: white;
+nav {
+    background-color: crimson;
     padding: 2px 0;
     text-align: center;
- }
+}
 
 nav ul {
     padding: 0;
-    list-style: none;
+    list-style-type: none;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    border-bottom: 2px solid white;
 }
 
 nav li a {
     display: block;
+    height: 40px;
+    line-height: 40px;
     background-color: crimson;
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
-    font-size: 1.4em;
-    font-weight: bold;
     color: black;
     text-decoration: none;
-    border: 3px solid black;
-    border-radius: 10px;
-    margin: 0 10px;
-}  
+    font-size: 1.3em;
+    padding: 5px 0;
+}
 
 nav li a:hover {
     background-color: black;
     color: crimson;
-    border: 3px solid crimson ;
+    border-color: crimson;
 }
 
 main {
-    display: flex;
-}
-
-section, 
-aside {
-    border: 2px solid crimson;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-
-section {
-    width: 80%;
-}
-
-aside {
-    width: 20%;
-}
-
-
-
- .single_page {
-    width: 75%;
- }
-
- #main_img_resize {
-    width: 75%;
- }
-
-#lower_area {
-    display: flex;
+    padding: 10px
 }
 
 .col {
-    border: 2px solid crimson;
-    margin: 10px;
     padding: 10px;
-    border-radius: 10px;
+    border-top: 2px solid white;
 }
 
 footer {
-    background-color: crimson;
-    text-align: center;
-    padding: 10px;
-    color: black;
+    background-color: mistyrose;
+    color: crimson;
     font-weight: bold;
+    text-align: center;
+    padding: 40px 0;
 }
 
 .button {
@@ -125,11 +87,85 @@ footer {
     border-color: crimson;
 } 
 
-table {
+table { 
+    border: crimson 
+}
+
+tr, td {
     border: 4px solid crimson;
 }
 
-td, tr {
-    border: 6px double black;
-    margin: 10px;
+@media {min-width: 786px;} { 
+    nav li {
+        display: inline-block;
+        border: 0;
+    }
+
+   
+
+    nav li a {
+        width: 175px;
+        margin: 0 5px;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+
+    main {
+        display:flex;
+    }
+
+    section, aside {
+        padding: 10px;
+        margin: 10px;
+        border: 2px solid crimson
+        border-radius: 10px;
+    }
+
+    section {
+        width:70%;
+    }
+
+    aside {
+        width: 30%;
+    }
+
+    .col img {
+     width: 400px;
+    }
+
+    .button {
+     margin-left: auto;
+     margin-right: auto;
+    }
+}
+
+@media {min-width: 1024px;} {
+    #container {
+        width: 65%;
+        margin: 20px auto;
+    }
+
+    nav li a {
+        background-color: mistyrose;
+        border: 0; 
+    }
+
+    #lower_area {
+        display: flex;
+    }
+
+    .col {
+        border: 2px solid mistyrose
+        padding: 10px;
+        margin: 10px;
+        border-radius: 10px;
+    }
+
+    .single_page {
+        width: 100%;  
+    }
+
+    section img {
+        width: 75%
+    }
 }
