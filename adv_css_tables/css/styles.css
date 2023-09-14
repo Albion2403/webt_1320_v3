@@ -95,7 +95,7 @@ tr, td {
     border: 4px solid crimson;
 }
 
-@media {min-width: 786px;} { 
+@media (min-width: 786px) { 
     nav li {
         display: inline-block;
         border: 0;
@@ -139,7 +139,7 @@ tr, td {
     }
 }
 
-@media {min-width: 1024px;} {
+@media (min-width: 1024px) {
     #container {
         width: 65%;
         margin: 20px auto;
