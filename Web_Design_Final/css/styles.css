@@ -8,6 +8,13 @@ img {
     width: 100%;
 }
 
+iframe, audio {
+    display: block;
+    width: 50%;
+    height: 400px;
+    margin: 20px
+}
+
 h1, h2, h3, h4 {
     color: orangered;
     text-align: center;
@@ -132,6 +139,7 @@ tr, td {
     .col img {
      width: 200px;
     }
+
 
     .button {
      margin-left: auto;
